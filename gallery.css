@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background: #0f0f1a; 
+    animation: backgroundChange 6s infinite;
+    background-size: 200% 200%;
+    color: #fff;
+    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.gallery {
+    columns: 3;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.photo {
+    position: relative;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+     transition: transform 0.3s ease-in-out;
+}  
+
+.photo figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 0.8rem 0.6rem;
+    font-size: 0.95rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.08);
+}
+
+.photo:hover figcaption {
+    transform: translateY(0);
+}
+
+/* MOBILE */
+    @media screen and (max-width:480px) {
+        .gallery {
+            columns: 1;
+        }
+    }
+
+    /* TABLET */
+    @media screen and (min-width:480px) and (max-width:768px) {
+        .gallery {
+            columns: 2;
+        }
+    }
+
+/* Background Colors */
+@keyframes backgroundChange {
+    0% {
+        background: radial-gradient(circle, #0f0f1a);
+    }
+
+    25% {
+        background: radial-gradient(circle, #17112B);
+    }
+
+    50% {
+        background: radial-gradient(circle, #0b1b24);
+    }
+
+    75% {
+        background: radial-gradient(circle, #21101a);
+    }
+
+    100% {
+        background: radial-gradient(circle, #15102a);
+    }
+}
+
