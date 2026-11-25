@@ -40,7 +40,7 @@ Image-Gallery/
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+(https://github.com/Kenny-dev-futa/responsive-image-gallery)
    ```
 
 2. Open the project folder.
