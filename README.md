@@ -1,20 +1,71 @@
 # Responsive Image Gallery
 
-A responsive image gallery built with HTML and CSS.
+A responsive image gallery built with **HTML, CSS, and JavaScript** as part of my CodeAlpha Frontend Development Internship.
 
-## What I Practiced
+The project showcases a collection of images in a clean, responsive layout with interactive features for a better browsing experience.
 
-- CSS columns
-- Responsive layouts
-- Media queries
-- Image sizing
-- Spacing and alignment
+## Features
 
-## Technologies
+- Responsive masonry-style image layout
+- Interactive image lightbox
+- Previous and Next image navigation
+- Image captions and hover effects
+- Smooth CSS transitions
+- Keyboard navigation using arrow keys and Escape
+- Image category filters
+- Responsive design for desktop, tablet, and mobile devices
+
+## Technologies Used
 
 - HTML5
 - CSS3
+- JavaScript
 
-## Purpose
+## Project Structure
 
-I built this project to practice creating responsive layouts and working with images using CSS.
+```text
+Image-Gallery/
+├── index.html
+├── gallery.css
+├── gallery.js
+├── Forest/
+├── Coffee/
+├── Otter/
+├── Sea view/
+└── image/
+```
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
+
+2. Open the project folder.
+
+3. Open `index.html` in your browser to view the gallery.
+
+## What I Learned
+
+Through this project, I practiced:
+
+- Creating responsive layouts with CSS columns and media queries
+- Working with DOM manipulation and event listeners
+- Implementing a lightbox using JavaScript
+- Managing image navigation with arrays and indexes
+- Filtering elements using JavaScript
+- Improving accessibility with keyboard controls and ARIA attributes
+
+## Internship
+
+**CodeAlpha — Frontend Development Internship**
+
+Task 1: Image Gallery
+
+## Author
+
+**Kehinde Mujeeb Adeyemo**
+
+[GitHub](https://github.com/Kenny-dev-futa)
