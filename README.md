@@ -58,12 +58,6 @@ Through this project, I practiced:
 - Filtering elements using JavaScript
 - Improving accessibility with keyboard controls and ARIA attributes
 
-## Internship
-
-**CodeAlpha — Frontend Development Internship**
-
-Task 1: Image Gallery
-
 ## Author
 
 **Kehinde Mujeeb Adeyemo**
