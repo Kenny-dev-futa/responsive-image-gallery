@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kehinde Mujeeb Adeyemo">
+    <meta name="description" content="Responsive Image Gallery with Lightbox and Image Filters">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title">My Image Gallery</h1>
+        <p class="subtitle">
+            Explore beautiful moments and creative spaces.
+        </p>
+    </header>
+
+    <!-- Image Category Filters -->
+    <nav class="filters" aria-label="Image categories">
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+        <button class="filter-btn" data-filter="nature">
+            Nature
+        </button>
+        <button class="filter-btn" data-filter="workspace">
+            Workspace
+        </button>
+        <button class="filter-btn" data-filter="lifestyle">
+            Lifestyle
+        </button>
+    </nav>
+
+    <!-- Image Gallery -->
+    <main>
+        <section class="gallery" id="gallery">
+
+            <figure class="photo" data-category="nature">
+                <img src="Forest/imgi_1_800.jpg" alt="Beautiful green forest">
+                <figcaption>Forest</figcaption>
+            </figure>
+
+            <figure class="photo" data-category="workspace">
+                <img src="image/Studyroom.jpg" alt="A quiet study room">
+                <figcaption>Study Room</figcaption>
+            </figure>
+
+            <figure class="photo" data-category="lifestyle">
+                <img src="Coffee/imgi_1_700.jpg" alt="A cup of coffee">
+                <figcaption>Coffee</figcaption>
+            </figure>
+
+            <figure class="photo" data-category="nature">
+                <img src="Otter/imgi_1_500.jpg" alt="An otter in its natural environment">
+                <figcaption>Otter</figcaption>
+            </figure>
+
+            <figure class="photo" data-category="nature">
+                <img src="Sea view/imgi_1_900.jpg" alt="Sea view">
+                <figcaption>Sea View</figcaption>
+            </figure>
+
+            <figure class="photo" data-category="workspace">
+                <img src="image/Workspace.jpg" alt="A creative workspace">
+                <figcaption>Workspace</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+
+        <button class="close-btn" id="closeBtn" aria-label="Close image preview">
+            &times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous image">
+            &#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next image">
+            &#10095; </button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Kehinde Mujeeb Adeyemo</p> 
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
